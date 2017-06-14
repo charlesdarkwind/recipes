@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bubbler One', sans-serif;
+}
+
+#title {
+	text-align: center;
+	color: #7baf66;
+}
+
+.mainWrap {
+	font-size: 1.2em;
+	margin: 2% 5% ;
+	border-radius: 5px;
+	min-height: 100px;
+	padding: 20px;
+}
+
+.recipeWrap {
+	margin-bottom: 10px;
+}
+
+.recipe {
+	color: #7baf66;
+	width: 96%;
+	height: 40px;
+	margin: auto;
+	background-color: #DFF0D8;
+	border-radius: 5px 5px 0 0; 
+	line-height: 40px;
+	padding-left: 20px;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.recipe:hover {
+	background-color: #d7efe9;
+}
+
+.recipe:hover ~ .ingredients {
+	border-color: #d7efe9;
+}
+
+.recipeWrap:not(:first-child) {
+	margin-top: 1%;
+}
+
+.ingredients {
+	border: 1px solid #DFF0D8;
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height 1.2s;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.ingredients li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+.ingredients h3, hr {
+	text-align: center;
+	margin: 20px;
+}
+
+.active {
+	height: 100%;
+	max-height: 400px;
+}
+
+.buttonAdd {
+	font-size: 1em;
+}
+
+.recipeButtons {
+	float: right;
+	margin: -10px 10px 10px 0;
+}
